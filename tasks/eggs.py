@@ -8,8 +8,8 @@ def eggs_solution(breaks):
         lepes=lepes-1
         if breaks(szamolo):
             for j in range(szamolo-lepes+1,szamolo):
-                if not breaks(j):
-                    emelet=j
+                if breaks(j):
+                    return j
                     break
             return emelet
     return 100
