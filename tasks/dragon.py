@@ -10,4 +10,7 @@ def dragon_solution(is_dead, number_of_cows):
         else:
             thin_alive_cow_index = middle_cow
     
-    return middle_cow
+
+        if is_dead(thin_alive_cow_index):
+            return thin_alive_cow_index
+        else: return thin_alive_cow_index-1
