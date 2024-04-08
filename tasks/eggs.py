@@ -1,4 +1,4 @@
-def eggs_solution():
+def eggs_solution(breaks):
     lepes=14
     szamolo=1
     emelet=0
