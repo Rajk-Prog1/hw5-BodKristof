@@ -1,4 +1,4 @@
-def eggs_solution(breaks):
+def eggs_solution():
     lepes=14
     szamolo=1
     emelet=0
@@ -7,11 +7,11 @@ def eggs_solution(breaks):
         szamolo=szamolo+lepes
         lepes=lepes-1
         if breaks(szamolo):
-            for j in range(szamolo-lepes+1,szamolo):
+            for j in range(szamolo-(lepes+1),szamolo):
                 if breaks(j):
-                    return j
+                    return j-1
                     break
             return emelet
     return 100
-
+    
 
